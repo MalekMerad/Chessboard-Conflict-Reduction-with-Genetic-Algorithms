@@ -1,0 +1,201 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(41, 41, 41);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: darkgray;
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 25px;
+    background-color: #f5f5f5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    transition: left .5s ease;
+}
+
+.inputHolder {
+    width: 200px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: 600;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin: 20px;
+    align-self: center;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.signs{
+  padding: 20px;
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  width: 400px;
+  height: auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+.img{
+  width: 45px;
+  height: 45px;
+}
+
+.chess-row{
+  display: flex;
+}
+
+.chess-board {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chess-piece {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+.chess-piece.white-square {
+  background-color: #fff; 
+}
+
+.chess-piece.black-square {
+  background-color: #000; 
+}
+
+.chess-piece {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.chessBaordAnalyse {
+  width: 360px;
+  height: 600px;
+  margin-top: 95px;
+  margin-left: 30px;
+  background-color: rgb(41, 41, 32);
+  border: 2px solid whitesmoke;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 10px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.analyseHeader{
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding: 20px;
+  background-color: darkgrey;
+  border-radius: 10px;
+}
+
+.chessHelper{
+  margin-top: 5px;
+  text-align: start;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
